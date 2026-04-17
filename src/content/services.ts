@@ -1,0 +1,51 @@
+export const services = [
+  {
+    id: 'voice',
+    icon: 'Phone',
+    title: 'Voice Agents',
+    description: 'Llamadas inbound y outbound con IA. Vapi, Retell, SimpleTalk. Califica leads, agenda citas y atiende clientes 24/7.',
+    tags: ['Vapi', 'Retell', 'SimpleTalk'],
+  },
+  {
+    id: 'chat',
+    icon: 'MessageSquare',
+    title: 'Chat & WhatsApp',
+    description: 'Agentes multi-canal que atienden 24/7 con contexto real. Web, WhatsApp, Instagram. Integrados con tu CRM.',
+    tags: ['WhatsApp', 'Web', 'Instagram'],
+  },
+  {
+    id: 'integraciones',
+    icon: 'Workflow',
+    title: 'Integraciones & APIs',
+    description: 'Salesforce, HubSpot, GHL, Shopify. Webhooks, middleware custom y automatizaciones complejas con n8n.',
+    tags: ['n8n', 'Webhooks', 'APIs'],
+  },
+  {
+    id: 'ghl',
+    icon: 'Layers',
+    title: 'GoHighLevel',
+    description: 'Setup completo, white-label, dashboards custom y migraciones. Expertos certificados en la plataforma.',
+    tags: ['White-label', 'Setup', 'Dashboards'],
+  },
+  {
+    id: 'dev',
+    icon: 'Code2',
+    title: 'Development',
+    description: 'Apps web, dashboards interactivos y backends a medida con Next.js, Supabase, y edge computing.',
+    tags: ['Next.js', 'Supabase', 'TypeScript'],
+  },
+  {
+    id: 'infra',
+    icon: 'Server',
+    title: 'Infraestructura IA',
+    description: 'OpenClaw, VPS, Docker, self-hosted models. Control total sobre tu stack de IA sin depender de terceros.',
+    tags: ['Docker', 'VPS', 'Self-hosted'],
+  },
+  {
+    id: 'training',
+    icon: 'GraduationCap',
+    title: 'Training & Mentoría',
+    description: 'Cursos pre-grabados, mentoría 1-on-1 y workshops. Aprende a construir y escalar tus propios agentes.',
+    tags: ['1-on-1', 'Cursos', 'Workshops'],
+  },
+];

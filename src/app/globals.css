@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --white: #FFFFFF;
+  --navy-50: #F5F7FB;
+  --navy-100: #E5EAF3;
+  --navy-200: #C4CDE0;
+  --navy-300: #8E9CBC;
+  --navy-400: #5E6D93;
+  --navy-500: #2D3963;
+  --navy-600: #1E2849;
+  --navy-700: #131B36;
+  --navy-800: #0A1122;
+  --navy-900: #050A1A;
+  --blue-400: #60A5FA;
+  --blue-500: #3B82F6;
+  --blue-600: #2563EB;
+  --blue-700: #1D4ED8;
+  --violet-400: #A78BFA;
+  --violet-500: #8B5CF6;
+  --violet-600: #7C3AED;
+  --violet-700: #6D28D9;
+  --gradient-brand: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%);
+  --gradient-brand-hover: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+  --gradient-surface: linear-gradient(180deg, #0A1122 0%, #050A1A 100%);
+  --shadow-glow: 0 0 60px rgba(124, 58, 237, 0.25);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--navy-900);
+  color: var(--white);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient border card */
+.card-gradient-border {
+  position: relative;
+  background: var(--navy-800);
+  border-radius: var(--radius-lg);
+}
+.card-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: var(--gradient-brand);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 200ms;
+}
+.card-gradient-border:hover::before {
+  opacity: 1;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy-900); }
+::-webkit-scrollbar-thumb { background: var(--navy-600); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--navy-400); }
+
+/* Selection */
+::selection { background: rgba(124, 58, 237, 0.3); color: white; }
+
+/* Animated gradient orb */
+.orb {
+  border-radius: 50%;
+  filter: blur(80px);
+  animation: float 8s ease-in-out infinite;
+}
